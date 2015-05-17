@@ -18,7 +18,7 @@ gem 'font-awesome-rails'
 gem 'uglifier'
 
 # For enabling requirejs-style AMD scripts in the asset pipeline.
-gem 'requirejs-rails', '~> 0.9.2'
+gem 'requirejs-rails', '~> 0.9.2', git: 'https://github.com/jwhitley/requirejs-rails.git'
 
 # For HAML HTML view templates.
 gem 'haml-rails'
