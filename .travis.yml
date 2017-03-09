@@ -2,9 +2,10 @@ language: ruby
 bundler_args: "--without development:production"
 cache: bundler
 sudo: false
+before_install: gem update --system
 script: bundle exec rspec
 rvm:
-- 2.2.2
+- 2.3.3
 notifications:
   webhooks: http://cfa-project-monitor.herokuapp.com/projects/67f80d53-afb0-4344-bd40-2644f55a4462/status
 env:
