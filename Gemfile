@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.2.2'
+ruby '2.3.3'
 gem 'railties', '~> 4.2'
 gem 'actionmailer'
 
@@ -25,7 +25,7 @@ gem 'requirejs-rails', '= 0.9.5'
 gem 'haml-rails'
 
 # SERVER
-gem 'puma', '= 2.12.3'
+gem 'puma'
 gem 'ohanakapa', '~> 1.1.1'
 gem 'faraday-http-cache', '~> 1.0'
 
@@ -41,13 +41,15 @@ gem 'kgio'
 gem 'rack-rewrite', '~> 1.5.0'
 
 # For Google translation API.
-gem 'google-api-client', '~> 0.8.1'
+gem 'google-api-client', '~> 0.9'
 
 # App config and ENV variables for heroku.
 gem 'figaro'
 
 # Handles logic behind Pagination UI component.
 gem 'kaminari'
+
+gem 'sprockets', '~> 2.12'
 
 group :production, :staging do
   # Enables serving assets in production and setting logger to standard out.
@@ -63,9 +65,6 @@ group :development do
   # For mocking emails for sending.
   gem 'letter_opener'
 
-  # For linting JS with `rake jshint`.
-  gem 'jshint'
-
   # For code documentation, run `yard --help` for list of commands.
   gem 'yard'
 
@@ -78,16 +77,20 @@ group :development do
   gem 'derailed'
   gem 'rack-mini-profiler'
   gem 'flamegraph'
+  gem 'stackprof'
+
+  gem 'bummr'
+  gem 'reek'
 end
 
 group :test do
   gem 'coveralls', require: false
-  gem 'capybara', '~> 2.4.1'
+  gem 'capybara', '~> 2.4'
   gem 'poltergeist'
-  gem 'vcr', '~> 2.9.0'
-  gem 'webmock', '~> 1.20'
-  gem 'email_spec', '~> 1.6.0'
-  gem 'haml-lint'
+  gem 'vcr'
+  gem 'webmock', '~> 2.1'
+  gem 'email_spec'
+  gem 'haml_lint'
 
   # Ruby static code analyzer, based on the community Ruby style guide.
   gem 'rubocop'

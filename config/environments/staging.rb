@@ -41,8 +41,8 @@ Rails.application.configure do
   # --------------------------------------------------------------------------
 
   # --------------------------------------------------------------------------
-  # EMAIL DELIVERY SETUP WITH MANDRILL ON HEROKU
-  # https://devcenter.heroku.com/articles/mandrill
+  # EMAIL DELIVERY SETUP WITH SENDGRID ON HEROKU
+  # https://devcenter.heroku.com/articles/sendgrid
   # ----------------------------------------------
 
   config.action_mailer.default_url_options = { host: ENV['CANONICAL_URL'] }
@@ -55,11 +55,12 @@ Rails.application.configure do
 
   config.action_mailer.smtp_settings = {
     port:           '587',
-    address:        'smtp.mandrillapp.com',
-    user_name:      ENV['MANDRILL_USERNAME'],
-    password:       ENV['MANDRILL_APIKEY'],
+    address:        'smtp.sendgrid.net',
+    user_name:      ENV['SENDGRID_USERNAME'],
+    password:       ENV['SENDGRID_PASSWORD'],
     domain:         'heroku.com',
-    authentication: :plain
+    authentication: :plain,
+    enable_starttls_auto: true
   }
   # ---------------------------------------------------------------------------
 
@@ -84,7 +85,8 @@ Rails.application.configure do
   # Do not fallback to assets pipeline if a precompiled asset is missed.
   config.assets.compile = false
 
-  # `config.assets.version` and `config.assets.precompile` have moved to config/initializers/assets.rb
+  # `config.assets.version` and `config.assets.precompile` have moved to
+  # config/initializers/assets.rb
 
   # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH

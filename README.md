@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/hackforla/ohana-web-search-la.svg?branch=master)](https://travis-ci.org/hackforla/ohana-web-search-la) [![Coverage Status](https://coveralls.io/repos/hackforla/ohana-web-search-la/badge.svg?branch=master)](https://coveralls.io/r/hackforla/ohana-web-search-la?branch=master) [![Dependency Status](https://gemnasium.com/hackforla/ohana-web-search-la.svg)](https://gemnasium.com/hackforla/ohana-web-search-la) [![Code Climate](https://codeclimate.com/github/hackforla/ohana-web-search-la.svg)](https://codeclimate.com/github/hackforla/ohana-web-search-la)
 
-Ohana Web Search is the web-based search portion of the [Ohana](http://ohanapi.org) project. It requires connecting to your own instance of [Ohana API](https://github.com/codeforamerica/ohana-api), which will provide the data to Ohana Web Search.
+Ohana Web Search is the web-based search portion of the Ohana project. It requires connecting to your own instance of [Ohana API](https://github.com/codeforamerica/ohana-api), which will provide the data to Ohana Web Search.
 
 This project was developed by [Code for America's 2013 San Mateo County, CA,](http://codeforamerica.org/2013-partners/san-mateo-county/) fellowship team. Thanks to a [grant from the Knight Foundation](http://www.knightfoundation.org/grants/201447979/), [@monfresh](https://github.com/monfresh), [@spara](https://github.com/spara), and [@anselmbradford](https://github.com/anselmbradford) will continue to push code in 2014.
 
@@ -17,8 +17,8 @@ You can see a running version of the application at
 
 ## Stack Overview
 
-* Ruby version 2.2.2
-* Rails version 4.2.1
+* Ruby version 2.3.3
+* Rails version 4.2.7.1
 * Template Engines: ERB and HAML
 * Testing Frameworks: RSpec, Capybara, Poltergeist
 
