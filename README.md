@@ -1,4 +1,4 @@
-#Ohana Web Search
+# Ohana Web Search
 
 [![Build Status](https://travis-ci.org/hackforla/ohana-web-search-la.svg?branch=master)](https://travis-ci.org/hackforla/ohana-web-search-la) [![Coverage Status](https://coveralls.io/repos/hackforla/ohana-web-search-la/badge.svg?branch=master)](https://coveralls.io/r/hackforla/ohana-web-search-la?branch=master) [![Dependency Status](https://gemnasium.com/hackforla/ohana-web-search-la.svg)](https://gemnasium.com/hackforla/ohana-web-search-la) [![Code Climate](https://codeclimate.com/github/hackforla/ohana-web-search-la.svg)](https://codeclimate.com/github/hackforla/ohana-web-search-la)
 
